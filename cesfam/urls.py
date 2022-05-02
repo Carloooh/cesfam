@@ -22,5 +22,6 @@ import sistemaCesfam
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', sistemaCesfam.urls)
+    path('', sistemaCesfam.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
