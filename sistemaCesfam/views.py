@@ -5,3 +5,9 @@ from django.shortcuts import render
 
 def index(request):
     return render(request,'main.html')
+
+def farmacia(request):
+    return render(request,'farmacia.html')
+
+def medico(request):
+    return render(request,'medico.html')
