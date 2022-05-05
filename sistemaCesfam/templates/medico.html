@@ -14,51 +14,171 @@
 
 </head>
 
-<header>
-    <div class="container-fluid">
-        <div class="row text-center">
-            <div class="col-md-12">
-                <h1>Sistema MediFarm</h1>
+
+<div class="container-fluid">
+
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a class="navbar-brand" href="#"><img src="data:image/png;base64,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"
+                                alt="" width="30" height="24" class="d-inline-block align-text-top"> Bootstrap</a>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-success" type="submit">Ver Perfil</button>
+
+                        <button class="btn btn-outline-success" type="submit">Cerrar Sesión</button>
+                    </div>
+                </div>
+
+
+
             </div>
-        </div>
+        </nav>
+    </header>
+
+    <body>
+        <!-- Contenido -->
         <div class="row">
-            <div class="col-md-4">
-
+            <!-- Funciones -->
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true" data-bs-toggle="modal" data-bs-target="#CrearReceta">Crear Receta</a>
+                </div>
             </div>
-
-            <div class="col-md-4">
-                <ul class="nav nav-pills justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pacientes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Recetas</a>
-                    </li>
-                </ul>
+            <!-- Carrusel -->
+            <div class="col-md-6">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://picsum.photos/100/75" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/100/75" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/100/75" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
-            <div class="col-md-4">
+    </body>
 
+    <footer>
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                      </svg></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                      </svg></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                        <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                      </svg></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                      </svg></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                      </svg></a>
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg></a>
+                </section>
+                <!-- Section: Social media -->
             </div>
+            <!-- Grid container -->
 
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/">Sistema CESFAM</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        </div>
+    </footer>
+</div>
+
+<!-- Modals -->
+
+<!-- Modal Crear Receta -->
+<div class="modal fade" id="CrearReceta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Crear Receta</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="POST">
+                    <div>
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                </form>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Finalizar Receta</button>
         </div>
     </div>
-</header>
-
-<body>
-
-</body>
-
-<footer>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-
-            </div>
-        </div>
-    </div>
-</footer>
+</div>
+</div>
 
 </html>
