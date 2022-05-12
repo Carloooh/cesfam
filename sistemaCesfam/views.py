@@ -11,3 +11,13 @@ def farmacia(request):
 
 def medico(request):
     return render(request,'medico.html')
+
+def contacto(request):
+    
+    if request.method=="POST":
+        
+        
+        
+        return render(request, "confirmacion.html")
+    
+    return render(request, 'solicitud.html')
