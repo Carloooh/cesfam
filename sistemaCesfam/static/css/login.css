@@ -1,15 +1,9 @@
-.card {
-    margin: 0 auto;
-    /* Added */
-    float: none;
-    /* Added */
-    margin-bottom: 10px;
-    /* Added */
+body {
+    text-align: center;
+    background-color: rgb(101, 164, 236);
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+header {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
 }
